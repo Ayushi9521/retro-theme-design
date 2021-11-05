@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* upper bar */
+.upperbar {
+  height: 36vh;
+  background: url("../images/ubg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.im {
+  width: 21%;
+}
+
+/* rotating circle */
+.circle {
+  width: 12%;
+  animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar */
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 5px;
+  padding: 0 12px;
+}
+
+.topnav a {
+  padding: 21px 30px;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  font-family: "Irish Grover", cursive;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav a:hover {
+  color: rgb(231, 26, 26);
+  background-color: floralwhite;
+}
+.background {
+  background: rgba(0, 0, 0, 0.7) url("../images/bg3.jpg");
+
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/* First Section */
+.firstSec {
+  height: 90vh;
+}
+.f1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(15, 36, 36);
+}
+.f1 h1 {
+  font-size: 8rem;
+  font-family: "Irish Grover", cursive;
+}
+.f1 p {
+  font-size: xx-large;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+/* Second Section */
+.section {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: 33px auto;
+}
+.imgFluid {
+  width: 150%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.paras {
+  padding: 0 60px;
+}
+.text-b {
+  font-size: 3rem;
+  font-family: "Irish Grover", cursive;
+}
+.text-s {
+  font-size: 1.5rem;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+/* section 3 */
+.s3 {
+  height: 45vh;
+  max-width: 94%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
+  margin: 15px auto;
+  border: 2px outset goldenrod;
+}
+
+/* img gallery */
+.imgcon{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 90%;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.item{
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 26%;
+}
+
+/* contact */
+.contact{
+ background: url(../images/ubg.jpg);
+  height: 48rem;
+}
+.text-center{
+  text-align: center;
+  padding: 7px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+.form{
+  max-width: 700px;
+  margin:42px auto;
+}
+.form-input{
+  width: 100%;
+  font-size: 30px;
+  border: 2px solid gray;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-family: "Zen Kurenaido", sans-serif;
+  
+}
+.btnc{
+  font-size: 30px;
+  background-color: rgb(216, 22, 112);
+  color: white;
+  border: 2px solid gray;
+  padding: 10px;
+  width: 50%;
+  border-radius: 26px;
+}
+footer{
+  margin: 5px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+/* .logo{
+  width: 6%;
+  border-radius: 50%;
+  animation: rotation  3s infinite  linear;
+} */
+/* @keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+} */
+
+@media screen and (max-width: 720px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: revert;
+    display: block;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .topnav {
+    margin: 0;
+    padding: 0;
+  }
+  .topnav.responsive {
+    flex-direction: column;
+  }
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}

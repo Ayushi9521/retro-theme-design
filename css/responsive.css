@@ -1,0 +1,46 @@
+@media only screen and (max-width:1180px)  {
+    .firstSec {
+        height: 130vh;
+    }
+    .section{
+        height: 481px;
+    }
+    .s3 {
+        height: 100vh;
+    }
+}
+@media only screen and (max-width:900px)  {
+    .firstSec {
+        height: 130vh;
+    }
+    .section{
+        height: 600px;
+    }
+    .s3 {
+        height: 91vh;
+    }
+}
+@media screen and (max-width: 720px) {
+    .firstSec {
+        height: 184vh;
+    }
+    .section{
+        height: 1086px;
+        flex-direction: column;
+    }
+    .imgFluid {
+        width: 90%;
+    }
+    .s3 {
+        height: 107vh;
+    }
+    .imgcon{
+        flex-direction: column;
+    }
+    .item{
+        width: 70%;
+    }
+    .form{
+        max-width: 600px;
+    }
+  }
